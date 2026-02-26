@@ -1,0 +1,35 @@
+body {
+  background: #fff;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.tabs button.active {
+  background: #ddd;
+}
+
+#heatmap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+.cell {
+  height: 22px;
+  border-radius: 4px;
+}

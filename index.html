@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>BoatRace Heatmap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>全選手ヒートマップ</h1>
+
+  <p class="note">
+    ※ 濃いマスほど数値が高いイメージです（1〜10）。<br>
+    ※ 枠付きマスは直近10走、薄いマスは不足分を自動補完したデータです。<br>
+    ※ 実データとは異なる場合があります（仮データ・補完ロジックを使用）。
+  </p>
+
+  <input id="search" placeholder="名前 or 登録番号">
+
+  <div id="player-list"></div>
+
+  <h2 id="player-name">選手を選んでください</h2>
+
+  <div class="tabs">
+    <button data-boat="boat1" class="active">1</button>
+    <button data-boat="boat2">2</button>
+    <button data-boat="boat3">3</button>
+    <button data-boat="boat4">4</button>
+    <button data-boat="boat5">5</button>
+    <button data-boat="boat6">6</button>
+  </div>
+
+  <div id="heatmap"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
